@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+
+    <string name="action_home">Home</string>
+    <string name="action_chart">Chart</string>
+    <string name="action_setting">Setting</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_voice">Voice</string>
+
+    <string name="fragment_living_room">LIVING ROOM</string>
+    <string name="fragment_bed_room">BED ROOM</string>
+    <string name="fragment_dining_room">DINING ROOM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/drawable-v24/body_shape.xml" value="0.14635416666666667" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/activity_main.xml" value="0.2631578947368421" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_bed_room.xml" value="0.264" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_chart.xml" value="0.19610507246376813" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_dining_room.xml" value="0.19610507246376813" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_home.xml" value="0.19610507246376813" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_living_room.xml" value="0.3255208333333333" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_living_room_air_conditioner.xml" value="0.13020833333333334" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_living_room_air_conditionter.xml" value="0.4" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_living_room_light.xml" value="0.4" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard-main/IoT-Smart-Home-Dashboard-main/app/src/main/res/menu/menu_bottom_nav.xml" value="0.13020833333333334" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_bed_room.xml" value="0.6" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_dining_room.xml" value="0.6" />
+        <entry key="..\:/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_living_room.xml" value="0.6" />
+        <entry key="..\:/New folder (5)/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_bed_room.xml" value="0.536" />
+        <entry key="..\:/New folder (5)/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_dining_room.xml" value="0.4" />
+        <entry key="..\:/New folder (5)/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_living_room.xml" value="0.4875124875124875" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/drawable/ellipse.xml" value="0.3828125" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/drawable/ellipse_13.xml" value="0.3828125" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_bed_room.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_chart.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_dining_room.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_home.xml" value="0.35260416666666666" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_home3.xml" value="0.33" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_living_room.xml" value="0.33" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/fragment_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/layout/home.xml" value="0.35260416666666666" />
+        <entry key="..\:/android studio/SmartHomeDashboard/app/src/main/res/menu/menu_bottom_nav.xml" value="0.36666666666666664" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/bg_gray_corner_10.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/bg_yellow_corner_10.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/body_shape.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/camera_background.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/camera_icon_setting.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/camera_icon_share.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/circle_humidity.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable-v24/circle_rain.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/bg_gray_corner_10.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/bg_white_corner_10_border_gray.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/bg_white_corner_16.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/bg_yellow_corner_10.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/bg_yellow_corner_16_top_left_top_right.xml" value="0.2203125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/camera_button_style.xml" value="0.1125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/camera_icon_add.xml" value="0.1125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/camera_icon_qrscanner.xml" value="0.1125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/camera_icon_refresh.xml" value="0.1125" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/drawable/voice_icon_mic.xml" value="0.13541666666666666" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_bed_room.xml" value="0.1" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera.xml" value="0.1" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera1.xml" value="0.18" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera2.xml" value="0.1" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera3.xml" value="0.1" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera4.xml" value="0.1" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera_setting_popup.xml" value="0.25" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_camera_share_popup.xml" value="0.11927083333333334" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_living_room.xml" value="0.11927083333333334" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/layout/fragment_voice.xml" value="0.11927083333333334" />
+        <entry key="..\:/github/IoT-Smart-Home-Dashboard/app/src/main/res/menu/menu_bottom_nav.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
