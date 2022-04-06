@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="100dp"
+
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="200"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Temperature"
+
+
+        android:textColor="#F7F60000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="100dp"
+
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Humidity"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/btnLED"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="32dp"
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemperature" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/logo_hcmut"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:textColor="#F7F60000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/temp_icon"
+
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/txtTemperature"
+        app:layout_constraintStart_toStartOf="@+id/txtTemperature"
+        app:layout_constraintTop_toTopOf="@+id/txtTemperature"
+        app:srcCompat="@drawable/temp_icon" />
+
+    <ImageView
+        android:id="@+id/humi_icon"
+
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/txtHumidity"
+        app:layout_constraintStart_toStartOf="@+id/txtHumidity"
+        app:layout_constraintTop_toTopOf="@+id/txtHumidity"
+        app:srcCompat="@drawable/humi_icon" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toTopOf="@id/txtTemperature"
+        android:id="@+id/graph"
+        android:layout_height="200dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
