@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if (isChecked == true) {
                     Log.d("mqtt", "Button is ON");
-                    sendDataToMQTT("khanh_trinh_ce/feeds/bbc-led", "1");
+                    sendDataToMQTT("khanh_trinh_ce/feeds/dadn-led", "1");
                 } else {
                     Log.d("mqtt", "Button is OFF");
-                    sendDataToMQTT("khanh_trinh_ce/feeds/bbc-led", "0");
+                    sendDataToMQTT("khanh_trinh_ce/feeds/dadn-led", "0");
                 }
             }
         });
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                     viewport.setMaxY(50);
                     viewport.setMinY(0);
                 }
-                if (topic.contains("bbc-led")) {
+                if (topic.contains("dadn-led")) {
                     if (message.toString().equals("0")) {
                         btnLED.setChecked(false);
                     }
