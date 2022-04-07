@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if (isChecked == true) {
                     Log.d("mqtt", "Button is ON");
-                    sendDataToMQTT("khanh_le1911363/feeds/bbc-led", "1");
+                    sendDataToMQTT("khanh_trinh_ce/feeds/bbc-led", "1");
                 } else {
                     Log.d("mqtt", "Button is OFF");
-                    sendDataToMQTT("khanh_le1911363/feeds/bbc-led", "0");
+                    sendDataToMQTT("khanh_trinh_ce/feeds/bbc-led", "0");
                 }
             }
         });
@@ -112,10 +112,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d("mqtt", "Received: " + message.toString());
-                if (topic.contains("bbc-humi")) {
+                if (topic.contains("dadn-humi")) {
                     txtHumi.setText(message.toString() + "% ");
                 }
-                if (topic.contains("bbc-temp")) {
+                if (topic.contains("dadn-temp")) {
                     txtTemp.setText(message.toString() + "°C");
                     int tempValue = Integer.parseInt(message.toString());
                     //change background color

@@ -23,11 +23,11 @@ public class MQTTHelper {
 
 
     private String clientId = "000";
-    final String subscriptionTopic = "khanh_le1911363/f/+";
+    final String subscriptionTopic = "khanh_trinh_ce/f/+";
 
 
-    final String username = "khanh_le1911363";
-    final String password = "aio_sDTl591KY1iTS8qYwUh2vgnytXzk";
+    final String username = "khanh_trinh_ce";
+    final String password = "Them key vao di";
 
     public MqttAndroidClient mqttAndroidClient;
 
