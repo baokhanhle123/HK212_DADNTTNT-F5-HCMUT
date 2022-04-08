@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     MQTTHelper mqttHelper;
 
-    TextView txtTemp, txtHumi;
+    TextView txtTemp, txtHumi, txtBrightness, txtGas;
     ToggleButton btnLED;
 
     private int pointsPlotted = 0;
@@ -49,10 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         txtTemp = findViewById(R.id.txtTemperature);
         txtHumi = findViewById(R.id.txtHumidity);
+        txtBrightness = findViewById(R.id.txtBrightness);
+        txtGas = findViewById(R.id.txtGas);
+
         btnLED = findViewById(R.id.btnLED);
 
-        txtTemp.setText("NULL" + "°C");
-        txtHumi.setText("NULL" + "% ");
+        txtTemp.setText("NULL" + " °C");
+        txtHumi.setText("NULL" + " %");
+        txtBrightness.setText("NULL" + " lux ");
+        txtGas.setText("NULL" + " mV");
 
         btnLED.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -79,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void sendDataToMQTT (String topic, String mess) {
-
-
 
         MqttMessage msg = new MqttMessage();
         msg.setId(1234); //filter id
@@ -113,10 +116,10 @@ public class MainActivity extends AppCompatActivity {
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d("mqtt", "Received: " + message.toString());
                 if (topic.contains("dadn-humi")) {
-                    txtHumi.setText(message.toString() + "% ");
+                    txtHumi.setText(message.toString() + " %");
                 }
                 if (topic.contains("dadn-temp")) {
-                    txtTemp.setText(message.toString() + "°C");
+                    txtTemp.setText(message.toString() + " °C");
                     int tempValue = Integer.parseInt(message.toString());
                     //change background color
                     if (tempValue < 20) {
@@ -143,7 +146,13 @@ public class MainActivity extends AppCompatActivity {
                     viewport.setMaxY(50);
                     viewport.setMinY(0);
                 }
-                if (topic.contains("dadn-led")) {
+                if (topic.contains("dadn-brgt")) {
+                    txtBrightness.setText(message.toString() + " lux");
+                }
+                if (topic.contains("dadn-gas")) {
+                    txtGas.setText(message.toString() + " mV");
+                }
+                if (topic.contains("bbc-led")) {
                     if (message.toString().equals("0")) {
                         btnLED.setChecked(false);
                     }

@@ -47,6 +47,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txtBrightness"
+        android:layout_width="100dp"
+
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="208dp"
+        android:background="#00FFEA"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Brightness"
+
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemperature" />
+
+    <TextView
+        android:id="@+id/txtGas"
+        android:layout_width="100dp"
+
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FF4800"
+
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Gas"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHumidity" />
+
     <ToggleButton
         android:id="@+id/btnLED"
 
@@ -62,9 +100,9 @@
         android:textOff=""
         android:textOn=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTemperature" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -113,6 +151,30 @@
         app:layout_constraintStart_toStartOf="@+id/txtHumidity"
         app:layout_constraintTop_toTopOf="@+id/txtHumidity"
         app:srcCompat="@drawable/humi_icon" />
+
+    <ImageView
+        android:id="@+id/brightness_icon"
+
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/txtBrightness"
+        app:layout_constraintStart_toStartOf="@+id/txtBrightness"
+        app:layout_constraintTop_toTopOf="@+id/txtBrightness"
+        app:srcCompat="@drawable/brightness_icon" />
+
+    <ImageView
+        android:id="@+id/gas_icon"
+
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/txtGas"
+        app:layout_constraintStart_toStartOf="@+id/txtGas"
+        app:layout_constraintTop_toTopOf="@+id/txtGas"
+        app:srcCompat="@drawable/gas_icon" />
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
