@@ -160,7 +160,7 @@ public class BedRoomFragment extends Fragment implements View.OnClickListener {
     }
 
     public void curlRequest(String feeds) {
-        String url = "https://io.adafruit.com/api/v2/bksmartiot/feeds/" + feeds + "/data/last?x-aio-key=" + MainActivity.AIO_key;
+        String url = "https://io.adafruit.com/api/v2/baokhanhle123/feeds/" + feeds + "/data/last?x-aio-key=" + MainActivity.AIO_key;
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

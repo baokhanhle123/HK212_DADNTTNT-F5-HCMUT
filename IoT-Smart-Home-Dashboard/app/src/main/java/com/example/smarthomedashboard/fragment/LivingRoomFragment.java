@@ -164,7 +164,7 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
     }
 
     public void curlRequest(String feeds) {
-        String url = "https://io.adafruit.com/api/v2/bksmartiot/feeds/" + feeds + "/data/last?x-aio-key=" + MainActivity.AIO_key;
+        String url = "https://io.adafruit.com/api/v2/baokhanhle123/feeds/" + feeds + "/data/last?x-aio-key=" + MainActivity.AIO_key;
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -318,7 +318,7 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
         message.setPayload(bytes);
         Log.d("publish", "Publish:" + message);
         try {
-            mqttHelper.mqttAndroidClient.publish("bksmartiot/feeds/" + topic, message);
+            mqttHelper.mqttAndroidClient.publish("baokhanhle123/feeds/" + topic, message);
         } catch (MqttException e) {
             e.printStackTrace();
         }

@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 if (topic.contains("dadn-gas")) {
                     txtGas.setText(message.toString() + " mV");
                 }
-                if (topic.contains("bbc-led")) {
+                if (topic.contains("dadn-led")) {
                     if (message.toString().equals("0")) {
                         btnLED.setChecked(false);
                     }

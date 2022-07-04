@@ -129,7 +129,7 @@ public class ChartFragment extends Fragment {
         String today = format.format(date);
         String tomorrow = getNextDate(today);
 
-        String url = "https://io.adafruit.com/api/v2/bksmartiot/feeds/" + feeds + "/data?x-aio-key="+ MainActivity.AIO_key +"&start_time="
+        String url = "https://io.adafruit.com/api/v2/baokhanhle123/feeds/" + feeds + "/data?x-aio-key="+ MainActivity.AIO_key +"&start_time="
                 + today + "&end_time=" + tomorrow;
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {

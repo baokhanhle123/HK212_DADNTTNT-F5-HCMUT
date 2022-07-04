@@ -34,7 +34,7 @@ import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String AIO_key = "";
+    public static String AIO_key = "aio_DOYX86EJoTGu2HbllWmTpmdcpBO3";
 
     // Declare
     private BottomNavigationView main_bottom_navigation;
@@ -315,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
         message.setPayload(bytes);
         Log.d("publish", "Publish:" + message);
         try {
-            mqttHelper.mqttAndroidClient.publish("bksmartiot/feeds/" + topic, message);
+            mqttHelper.mqttAndroidClient.publish("baokhanhle123/feeds/" + topic, message);
         } catch (MqttException e) {
             e.printStackTrace();
         }

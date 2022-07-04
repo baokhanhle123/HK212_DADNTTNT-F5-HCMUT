@@ -22,8 +22,8 @@ public class MQTTHelper {
 
     private String clientId = "";
 
-    final String subscriptionTopic = "bksmartiot/feeds/+";
-    final String username = "bksmartiot";
+    final String subscriptionTopic = "baokhanhle123/feeds/+";
+    final String username = "baokhanhle123";
     final String password = MainActivity.AIO_key;
 
     public MqttAndroidClient mqttAndroidClient;
