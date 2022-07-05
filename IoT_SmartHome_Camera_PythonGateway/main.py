@@ -14,7 +14,7 @@ from email.message import EmailMessage
 # Image server link
 # imgLink = 'http://smarthomecamera.ddns.net:8888/out.jpg'
 
-imgLink = 'http://192.168.0.101:8888/'
+imgLink = 'http://192.168.0.101:8888/out.jpg'
 
 # Want to receive email?
 isSendEmail = True
@@ -29,7 +29,6 @@ msg['From'] = EMAIL_ADDRESS
 msg['To'] = 'baokhanhle.278@gmail.com'  # user email
 
 msg.set_content('Suspicious person detected!')
-
 
 def capture_image_email():
     print("Capture image 1...")
