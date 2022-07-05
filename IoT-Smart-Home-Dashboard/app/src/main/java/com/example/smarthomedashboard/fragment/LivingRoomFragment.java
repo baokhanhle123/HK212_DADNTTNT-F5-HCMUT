@@ -179,10 +179,17 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
                                 String temp = jsonVal.getString("temp");
                                 String humid = jsonVal.getString("humidity");
                                 String gas = jsonVal.getString("gas");
+
+                                Log.d("Message", "homeinfo " + temp );
+
                                 setHomeInfo(temp, humid, gas);
                             } else if (feeds.equals("livingroom")) {
+                                Log.d("Message", "living room X" );
                                 JSONArray light = jsonVal.getJSONArray("light");
                                 JSONArray air = jsonVal.getJSONArray("air");
+
+                                Log.d("Message", "light ");
+
                                 handleData(light, air);
                             }
 
@@ -247,10 +254,22 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
 
     public void handlePublishData(View v, String kind, int ID) throws JSONException {
         if (kind.equals("light")) {
-            light.put(ID, light.getInt(ID) == 1 ? 0 : 1);
+            // light.put(ID, light.getInt(ID) == 1 ? 0 : 1);
+            int[] livingRoomLightSwitchList = {
+                    R.id.living_room_switch_light_1,
+                    R.id.living_room_switch_light_2,
+                    R.id.living_room_switch_light_3,
+                    R.id.living_room_switch_light_4
+            };
+
+            SwitchCompat switchCompat = getView().findViewById(livingRoomLightSwitchList[ID]);
+            Log.d("Message", "ID " + ID + " Status " + switchCompat.isChecked());
+
             JSONObject data = new JSONObject();
             data.put("light", light);
             data.put("air", airConditioner);
+
+
             sendDataMQTT(data, "livingroom");
         } else if (kind.equals("air")) {
             airConditioner.put(ID, airConditioner.getInt(ID) == 1 ? 0 : 1);
@@ -261,11 +280,14 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
         }
     }
 
+
     @Override
     public void onClick(View v) {
+        Log.d("Bug", "Bug");
         switch (v.getId()) {
             case R.id.living_room_switch_light_1:
                 try {
+                    Log.d("Bug2", "Bug2");
                     handlePublishData(v, "light", 0);
                 } catch (JSONException e) {
                     e.printStackTrace();

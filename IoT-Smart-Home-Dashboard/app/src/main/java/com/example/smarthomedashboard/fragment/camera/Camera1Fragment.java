@@ -70,7 +70,8 @@ public class Camera1Fragment extends Fragment {
     private boolean camAvailable = true;
     private TextView textView;
 
-    private String camUrl = "http://smarthomecamera.ddns.net:8081";
+    //private String camUrl = "http://smarthomecamera.ddns.net:8081";
+    private String camUrl = "http://192.168.0.103:8080";
     private String camName = "Cam 1";
     private String camInfo = "Out door";
 
