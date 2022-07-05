@@ -254,7 +254,6 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
 
     public void handlePublishData(View v, String kind, int ID) throws JSONException {
         if (kind.equals("light")) {
-            // light.put(ID, light.getInt(ID) == 1 ? 0 : 1);
             int[] livingRoomLightSwitchList = {
                     R.id.living_room_switch_light_1,
                     R.id.living_room_switch_light_2,
@@ -262,13 +261,17 @@ public class LivingRoomFragment extends Fragment implements View.OnClickListener
                     R.id.living_room_switch_light_4
             };
 
-            SwitchCompat switchCompat = getView().findViewById(livingRoomLightSwitchList[ID]);
-            Log.d("Message", "ID " + ID + " Status " + switchCompat.isChecked());
-
             JSONObject data = new JSONObject();
-            data.put("light", light);
-            data.put("air", airConditioner);
 
+            try{
+                light.put(ID, light.getInt(ID) == 1 ? 0 : 1);
+                data.put("light", light);
+                data.put("air", airConditioner);
+                sendDataMQTT(data, "livingroom");
+
+            }catch(Exception e){
+
+            }
 
             sendDataMQTT(data, "livingroom");
         } else if (kind.equals("air")) {
