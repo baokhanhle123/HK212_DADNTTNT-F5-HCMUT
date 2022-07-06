@@ -14,7 +14,7 @@ from email.message import EmailMessage
 # Image server link
 # imgLink = 'http://smarthomecamera.ddns.net:8888/out.jpg'
 
-imgLink = 'http://192.168.0.101:8888/out.jpg'
+imgLink = 'http://192.168.0.118:8888/out.jpg'
 
 # Want to receive email?
 isSendEmail = True
